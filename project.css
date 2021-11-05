@@ -1,0 +1,57 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a0949;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   }
+  body{
+    background-image: url('Resources/iStock-520374378.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+   li{
+       float: left;
+   }
+   li span{
+    display: inline-block;   
+   }
+   li a,h3{
+    color: #f2f7f2;
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+   }
+
+   li a:hover{
+     color: #c1dd24;
+   }
+   #logo{
+       color: black;
+       background-color: rgb(163, 163, 9);
+       text-align: left;
+       font-size: 30px;
+   }
+    .circle{ width:30px; height:30px; }
+    .circle{ border-radius: 50%;
+    background-color: rgb(163, 163, 9); 
+   }
+   #top{
+    text-align: center;
+    padding: 20px;
+   }
+   h1,h3{
+       text-align: center;  
+       color:rgb(246, 250, 250);
+   }
+   .center {
+    display: flex;
+    justify-content: center;  
+  }
+  #CONTACTUS h3,span a{
+     float: right;
+  }

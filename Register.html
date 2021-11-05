@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration form
+    </title>
+    <meta charset="UTF-8">
+    <style>
+      .fill::after{
+        content: "*";
+      }
+      input:invalid{
+        border-color: black;
+      }
+      input:valid{
+        border-color: white;
+      }
+      body{
+        background-image: url('Resources/Online-courses.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-size: large;
+      }
+      h1{
+        text-align: center;
+        font-size: 50px;
+        color: rgb(10, 10, 10);
+      }
+    </style>
+ 
+</head>
+<body>
+   <h1>Apply NOW</h1>
+    <form  action="Thankyou.html" method="get">        
+        <input type="hidden" id="userId" name="userId" value="3487"> <br> <br>
+        <label class="fill" id="top"> Firstname </label>     
+        <input type="text" name="firstname" size="15"required> <br> <br>    
+        <label class= "fill"> Lastname: </label>    
+        <input type="text" name="lastname" size="15"required></span> <br> <br>  
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"> <br> <br>
+        <label class= "fill" for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required> <br> <br>
+        <label class= "fill" for="confirm_password">repeat Password:</label>
+        <input type="password" id="confirm_password" required><br> <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"> <br><br>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file"id="avatar" name="avatar"accept="image/png, image/jpeg"> <br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br><br>
+        <label for="faculty">Faculty:</label><br>
+        <select class="form-control" id="faculty" name="Faculty">
+            <option>Select your Faculty</option> 
+            <option>Engineering</option> 
+            <option>FCI</option> 
+        </select>
+        <br><br><br><br>
+            <fieldset>
+              <legend>interests</legend>
+              <div>
+                <input type="checkbox" id="Programming" name="interest" value="Programming">
+                <label for="Programming">Programming</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Reading" name="interest" value="Reading">
+                <label for="Reading">Reading</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Mathimatics" name="interest" value="Mathimatics">
+                <label for="Mathimatics">Mathimatics</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Other" name="interest" value="Other">
+                <label for="Other">Other</label>
+              </div>
+            </fieldset>
+            <label> About You </label>  <br> <br>       
+            <textarea
+             type="text" name="About You" rows="4" cols="50"> </textarea><br> <br>
+             <input type="checkbox" id="agree" name="agree" value="I agree to terms&conditions" required>
+             <label class="fill" for id="agree">I agree to terms&conditions</label> 
+             (<a href="terms-conditions.html" target="=_blanck">terms&conditions</a>)
+              <br> <br>
+             <button type="submit" value="Submit">Submit</button>
+             <button type="reset" value="Reset">Reset</button> 
+
+   </form>
+</body>
+</html>
+
