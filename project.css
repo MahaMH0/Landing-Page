@@ -40,7 +40,7 @@ ul {
     .circle{ border-radius: 50%;
     background-color: rgb(163, 163, 9); 
    }
-   #top{
+   #top li{
     text-align: center;
     padding: 20px;
    }
