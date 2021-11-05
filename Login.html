@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Login to your account
+    </title>
+    <meta charset="UTF-8">
+    <style>
+      .fill::after{
+        content: "*";
+      }
+      input:invalid{
+        border-color: black;
+      }
+      input:valid{
+        border-color: white;
+      }
+      body{
+        background-color: rgb(47, 38, 104);
+        font-size: large;
+      }
+      h1{
+        text-align: center;
+        font-size: 60px;
+        color: rgb(10, 10, 10);
+      }
+      body{
+        text-align: center;
+        background-color: floralwhite;
+      }
+    </style>
+ 
+</head>
+<body>
+   <h1>Login</h1>
+    <form  action="Home.html" method="get">        
+ 
+        <label class= "fill" for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required> <br> <br>
+        <label class= "fill" for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required> <br> <br>
+        <input type="checkbox" id="agree" name="agree" value="I agree to terms&conditions" required>
+        <label class="fill" for id="agree">I agree to terms&conditions</label> 
+             (<a href="terms-conditions.html" target="=_blanck">terms&conditions</a>)
+        <br> <br>
+        <input type="checkbox" id="Remmber me" name="Remmber me" value="Remmber me">
+        <label for="Remmber me">Remmber me</label>
+        <br> <br>
+        <button type="submit" value="Login">Login</button>
+   </form>
+</body>
+</html>
+
